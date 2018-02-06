@@ -8,6 +8,7 @@
 	Bron: https://www.khanacademy.org/computing/computer-programming/html-css-js/using-js-libraries-in-your-webpage/a/whats-a-js-library
 
 
+
 **Javascript frameworks**
 	A JavaScript framework is an application framework written in JavaScript. It differs from a  	JavaScript library in its 
   control flow a library offers functions to be called by its parent  	code, whereas a framework defines the entire 
