@@ -37,11 +37,11 @@
 
 **Babylon** — this one is quite different, it’s a 3D game engine based on WebGL and JavaScript, perfect for, well, building video games or complex 3D scenes.
 
-**Karma** is the perfect tool to run tests against different browsers. If you want to make sure your app works on all browsers this is the framework for you.
+**Karma** — is the perfect tool to run tests against different browsers. If you want to make sure your app works on all browsers this is the framework for you.
 
-**jQuery** is used by just about everybody, some say it’s the most used JavaScript library in the world. So when should you use it? Just about anytime.
+**jQuery** — is used by just about everybody, some say it’s the most used JavaScript library in the world. So when should you use it? Just about anytime.
 
-**PhantomJS** —it helps you in the testing department. It enables you to run tests, monitor network requests and manipulate pages.
+**PhantomJS** — it helps you in the testing department. It enables you to run tests, monitor network requests and manipulate pages.
 
 
 ### Bronnen
