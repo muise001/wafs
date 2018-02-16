@@ -15,8 +15,7 @@ console.log("global-scope");
     },
     request: function(search){
       var request = new XMLHttpRequest();
-      request.open('GET', 'http://api.giphy.com/v1/gifs/search?q= '+ search +' &api_key=bMIPWUm5uWlqwJDmZPxDw4dKGzDZfGdd&limit=6', true);
-      //bMIPWUm5uWlqwJDmZPxDw4dKGzDZfGdd
+      request.open('GET', 'http://api.giphy.com/v1/gifs/search?q= '+ search +' &api_key= + Key + =6', true);
 
       request.onload = function() {
         if (request.status >= 200 && request.status < 400) {
