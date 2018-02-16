@@ -1,5 +1,12 @@
-## Pro’s and cons JavaScript libraries / frameworks
+## Week 2
 
+**Voortgang WAFS**
+Afgelopen Maadag was ik ziek, dus ik had helaas de eerste les gemist. Afgelopen woensdag heb ik de Giphy-API in m'n code gezet met een beetje hulp van Dennis omdat er iets mis was met m'n api-key. Aan het eind van de dag werkte die gek genoeg eindelijk. De volgende dag opende ik de code weer om te kijken of ik verder kon werken. Toen eenmaal het kwartje viel, heb ik de code in een ruk uit kunnen typen. Ik had wat moeite om de detail-pagina's te laten werken. Maar uiteindelijk is dat ook gelukt. Ik heb geen gebruik gemaakt van een templating tool, maar alles werkt goed.
+
+**Hoe werkt de site?**
+De site werkt als volgt. Als in de zoekbalk (op #start) iets invult en daarna op "zoek" **klikt**, dan worden er gifjes ingeladen met bijbehorende titel. Als je daarna op de afbeelding klikt, kom je op een detail-pagina. Daar staat in ieder geval de rating en de upload-datum. Als de auteur niet anoniem is, dan staat zijn info er ook bij. 
+
+## Pro’s and cons JavaScript libraries / frameworks
 
 **Javascript libraries**
 	A library is a JavaScript file that contains a bunch of functions, and those functions  	accomplish some useful task for 
