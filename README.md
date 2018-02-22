@@ -1,3 +1,23 @@
+# Eindproduct
+### De Site.
+Dit is de nieuwe Giphy website. Op deze website kan je gifjes zoeken en als je klikt op zo'n gifje, dan krijg je meer info over het gifje waar je op hebt geklikt. Als je dit eenmaal hebt gedaan, dan wordt je laatste zoekopdracht opgeslagen op je computer. Hierdoor kan je altijd je laatste zoekopdracht blijven bekijken, zelfs als je geen internetverbinding hebt.
+
+### De API
+**De api zelf**
+Als api heb ik giphy gebruikt. Dit is een website waar allemaal gifjes op staan. De API zorgt ervoor dat je die gifjes zelf ook op kan halen en de bijbehorende data.
+
+**Hoe gebruik ik de api?**
+Ik heb een website gemaakt waarop de gebruiker zelf kan zoeken naar een gifje. Als hij deze eenmaal heeft gevonden, kan hij erop klikken en krijgt hij info over het gifje. 
+Deze info bestaat uit :
+* De titel
+* De rating
+* De opload-datum
+* De maker
+* Zijn giphy pagina
+* Zijn twitter
+
+De data sla ik op in de local storage
+
 ## Week 2
 
 **Voortgang WAFS**
@@ -61,6 +81,4 @@ https://blog.hellojs.org/javascript-frameworks-why-and-when-to-use-them-43af33d0
 https://hsheikhm.wordpress.com/2016/02/07/js-frameworks-pros-cons/
 
 
-Emiel Muis
-
-500740138
+>Emiel Muis
