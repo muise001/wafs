@@ -18,7 +18,9 @@ Deze info bestaat uit :
 * Zijn giphy pagina
 * Zijn twitter
 
-De data sla ik op in de local storage
+De data sla ik op in de local storage.
+
+De data die ik wel gebruik, maar niet zichtbaar maak is het ID van de gifjes. Het ID gebruik ik om de foto te kunnen laten doorverwijzen naar een detail-pagina. `<a href=#detail {{ID}} >`. Dit brengt je naar de detailpagina die de extra info over de gif laat zien.
 
 ### Leuke functies
 **Loader**
