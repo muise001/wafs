@@ -20,11 +20,22 @@ Deze info bestaat uit :
 
 De data sla ik op in de local storage
 
-**Visual Flow**
+### Leuke functies
+**Loader**
+Ik heb een loader toegevoegd zodat je ziet dat het soms even duurt om je zoekopdracht op te vragen. Deze wordt aangeroepen zodra je op zoek klikt en wordt verwijdert als je data is ingeladen en ingevult.
+
+**Templating Tool**
+Eerst vulde ik mijn pagina in door een hele lange onleesbare string te posten via innerHTML +=. Daarna ben ik Handlebars gaan gebruiken. Hier kon ik veel overzichtelijker mijn pagina invullen
+
+**Audio**
+Als bonus-pagina heb ik "DJ Khaled". Deze voegt eigenlijk vrij weinig toe aan de website. Ik vond het grappig om deze toe te voegen tijdens de routes-opdracht. Deze heb ik later niet meer verwijdert omdat deze een audiofragment afspeelt. Zie deze pagina ook als grapje en neem het niet serieus
+
+### Visual Flow
 
 ![visual flow schets](https://github.com/muise001/wafs/blob/master/visualflow.jpg "visual flow schets")
 
-## Week 2
+
+# Week 2
 
 **Voortgang WAFS**
 Afgelopen Maadag was ik ziek, dus ik had helaas de eerste les gemist. Afgelopen woensdag heb ik de Giphy-API in m'n code gezet met een beetje hulp van Dennis omdat er iets mis was met m'n api-key. Aan het eind van de dag werkte die gek genoeg eindelijk. De volgende dag opende ik de code weer om te kijken of ik verder kon werken. Toen eenmaal het kwartje viel, heb ik de code in een ruk uit kunnen typen. Ik had wat moeite om de detail-pagina's te laten werken. Maar uiteindelijk is dat ook gelukt. Ik heb geen gebruik gemaakt van een templating tool, maar alles werkt goed.
