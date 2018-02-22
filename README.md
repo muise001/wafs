@@ -2,6 +2,8 @@
 ### De Site.
 Dit is de nieuwe Giphy website. Op deze website kan je gifjes zoeken en als je klikt op zo'n gifje, dan krijg je meer info over het gifje waar je op hebt geklikt. Als je dit eenmaal hebt gedaan, dan wordt je laatste zoekopdracht opgeslagen op je computer. Hierdoor kan je altijd je laatste zoekopdracht blijven bekijken, zelfs als je geen internetverbinding hebt.
 
+![Site screenshot](https://github.com/muise001/wafs/blob/master/app.png "screenshot van de app")
+
 ### De API
 **De api zelf**
 Als api heb ik giphy gebruikt. Dit is een website waar allemaal gifjes op staan. De API zorgt ervoor dat je die gifjes zelf ook op kan halen en de bijbehorende data.
@@ -17,6 +19,10 @@ Deze info bestaat uit :
 * Zijn twitter
 
 De data sla ik op in de local storage
+
+**Visual Flow**
+
+![visual flow schets](https://github.com/muise001/wafs/blob/master/visualflow.jpg "visual flow schets")
 
 ## Week 2
 
