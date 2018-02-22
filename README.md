@@ -23,6 +23,12 @@ De data sla ik op in de local storage.
 De data die ik wel gebruik, maar niet zichtbaar maak is het ID van de gifjes. Het ID gebruik ik om de foto te kunnen laten doorverwijzen naar een detail-pagina. `<a href=#detail {{ID}} >`. Dit brengt je naar de detailpagina die de extra info over de gif laat zien.
 
 ### Leuke functies
+**Error afhandeling**
+Er zijn een aantal manieren waardoor mijn website niet optimaal gebruikt kan worden. Dit noemen we een error. In het begin was het zo, dat als je geen resultaat kreeg na je zoekopdracht, dan bleef de loader spinnen. Hierdoor zou de gebruiker het idee kunnen krijgen dat het gewoon lang duurt, terwijl al duidelijk is dat er geen resultaat is voor de zoekopdracht. Hierdoor heb ik een error-afhandeling gemaakt voor alle mogelijke errors. Er zijn drie errors die je kan krijgen :
+1. Na het zoeken is er geen resultaat
+2. Kan wel verbinden met de server, maar er gaat iets fout bij Giphy
+3. Er is geen internetverbinding
+
 **Loader**
 Ik heb een loader toegevoegd zodat je ziet dat het soms even duurt om je zoekopdracht op te vragen. Deze wordt aangeroepen zodra je op zoek klikt en wordt verwijdert als je data is ingeladen en ingevult.
 
