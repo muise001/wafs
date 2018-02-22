@@ -10,16 +10,44 @@
     <main>
 
       <section id="start">
-        <h1>Crazy Gif Finder</h1>
-        <p>Looking for a gif? stop looking, start searching</p>
-        <input type="text" name="" value="" placeholder="zoek">
-        <button type="submit" name="button">Zoek</button>
+        <header>
+          <h1>Crazy Gif Finder</h1>
+          <p>Looking for a gif? stop looking, start searching</p>
+          <div class="wrap">
+            <div class="search">
+              <form>
+              <input type="text" class="searchTerm" placeholder="Search Gifs">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <!-- Begin Loader Bron : https://codepen.io/aurer/pen/jEGbA -->
+
+        <div id="loader" class="loader loader--style3 none" title="2">
+          <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+            <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+              <animateTransform attributeType="xml"
+              attributeName="transform"
+              type="rotate"
+              from="0 25 25"
+              to="360 25 25"
+              dur="0.6s"
+              repeatCount="indefinite"/>
+            </path>
+          </svg>
+        </div>
+
+        <!--  -->
         <div id="results">
         </div>
       </section>
-      <section id="best-practices" class="none">
-        <h1>best practices</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section id="history" class="none">
+        <h1>Zoekgeschiedenis</h1>
+        <a href="#start" id="oudeZoekOpdracht"></a>
       </section>
       <section id="djKhaled" class="none">
         <h1>DJ Khaled</h1>
@@ -33,11 +61,43 @@
 
     <footer>
       <a href="#start"><p>Start</p></a>
-      <a href="#best-practices"><p>Best practices</p></a>
-      <a href="#djKhaled"><p>So Much Jewerly</p></a>
+      <a href="#history"><p>Zoekgeschiedenis</p></a>
+      <a href="#djKhaled"><p>Khaled</p></a>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script id="gifTemplate" type="text/x-handlebars-template">
+      {{#each data}}
+
+      <div>
+        <h3>{{title}}</h3>
+        <a href="#detail{{id}}">
+          <img alt={{title}}; style='width:60%; min-width:8em;' src='{{images.original.url}}'>
+        </a>
+      </div>
+
+      {{/each}}
+    </script>
+
+    <script id="gifDetailTemplate" type="text/x-handlebars-template">
+      {{#each data}}
+      <section id="detail{{id}}" class="none">
+        <h1>"{{title}}"</h1>
+        <img alt="{{title}}"; style='width: 80%; margin: 1em 10%;' src= "{{images.original.url}}">
+        <ol>
+          <li>rating : {{rating}}</li>
+          <li>Geupload op : {{import_datetime}}</li>
+        </ol>
+        <h3>Creator</h3>
+        <ol>
+          <li>uploadert : {{user.username}}</li>
+          <li>user-url : {{user.profile_url}}</li>
+          <li>Twitter : {{user.twitter}}</li>
+        </ol>
+      </section>
+      {{/each}}
+    </script>
+    <script src="js/handlebars.js"></script>
+    <script type="module" src="js/app.js"></script>
 
   </body>
 </html>
