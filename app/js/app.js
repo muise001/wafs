@@ -21,9 +21,6 @@ const app = (function() {
         loader.show()
       })
     },
-    search: function(){
-
-    },
     request: function(zoekOpdracht){
       //vraag giphy api op met zoekOpdracht
       var request = new XMLHttpRequest();
@@ -40,26 +37,34 @@ const app = (function() {
             document.getElementById("error").classList.add("none")
           }
           else {
-            // zoekOpdracht geeft geen resultaat. error afhandeling
-            document.getElementById("error").classList.remove("none")
-            document.getElementById("error").innerHTML = "Geen resultaat"
-            loader.hide()
+            app.errorAfhandeling(1)
           }
-        } else {
-            // API reageert niet. error afhandeling
-            document.getElementById("error").classList.remove("none")
-            document.getElementById("error").innerHTML = "Er is een fout met Giphy. Probeer later opnieuw"
-            loader.hide()
+        }
+        else {
+          app.errorAfhandeling(2)
           }
-        };
+      };
 
       request.onerror = function() {
+        app.errorAfhandeling(3)
+      }
+      request.send();
+    },
+    errorAfhandeling : function(error){
+      if (error == 1) {
+        // zoekOpdracht geeft geen resultaat. error afhandeling
+        document.getElementById("error").classList.remove("none")
+        document.getElementById("error").innerHTML = "Geen resultaat"
+      } else if (error == 2) {
+        // API reageert niet. error afhandeling
+        document.getElementById("error").classList.remove("none")
+        document.getElementById("error").innerHTML = "Er is een fout met Giphy. Probeer later opnieuw"
+      } else {
         // Internet doet het niet. error afhandeling
         document.getElementById("error").classList.remove("none")
         document.getElementById("error").innerHTML = "Er is een fout met de internetverbinding"
-        loader.hide()
       }
-      request.send();
+      loader.hide()
     },
     fillHome : function(data){
       // Gebruik handlebars template tool om data in pagina te zetten
