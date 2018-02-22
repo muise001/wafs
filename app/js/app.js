@@ -11,9 +11,7 @@ const app = (function() {
       routes.init()
       // Kijk of er al een file in localstorage zit
       cookie.eat()
-      this.search()
-    },
-    search: function(){
+
       document.querySelector("form").addEventListener("submit", function(e){
         //preventDefault zodat de pagina niet refreshed
         e.preventDefault()
@@ -22,6 +20,9 @@ const app = (function() {
         app.request(zoekOpdracht)
         loader.show()
       })
+    },
+    search: function(){
+
     },
     request: function(zoekOpdracht){
       //vraag giphy api op met zoekOpdracht
@@ -32,16 +33,31 @@ const app = (function() {
         if (request.status >= 200 && request.status < 400) {
           var data = JSON.parse(request.responseText);
           //geef data aan fillHome, zodat hij zichtbaar wordt in de site
-          app.fillHome(data)
-          //zet alle data in de localStorage
-          cookie.bake(zoekOpdracht, data)
+          if (data.data.length != 0) {
+            app.fillHome(data)
+            //zet alle data in de localStorage
+            cookie.bake(zoekOpdracht, data)
+            document.getElementById("error").classList.add("none")
+          }
+          else {
+            // zoekOpdracht geeft geen resultaat. error afhandeling
+            document.getElementById("error").classList.remove("none")
+            document.getElementById("error").innerHTML = "Geen resultaat"
+            loader.hide()
+          }
         } else {
-          console.log("reached server, but something went wrong");
-        }
-      };
+            // API reageert niet. error afhandeling
+            document.getElementById("error").classList.remove("none")
+            document.getElementById("error").innerHTML = "Er is een fout met Giphy. Probeer later opnieuw"
+            loader.hide()
+          }
+        };
 
       request.onerror = function() {
-        console.log("connection error");
+        // Internet doet het niet. error afhandeling
+        document.getElementById("error").classList.remove("none")
+        document.getElementById("error").innerHTML = "Er is een fout met de internetverbinding"
+        loader.hide()
       }
       request.send();
     },
