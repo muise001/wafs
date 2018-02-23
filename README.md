@@ -1,3 +1,5 @@
+[link naar site](https://muise001.github.io/wafs/app "Link naar de site")
+
 # Eindproduct
 ### De Site.
 Dit is de nieuwe Giphy website. Op deze website kan je gifjes zoeken en als je klikt op zo'n gifje, dan krijg je meer info over het gifje waar je op hebt geklikt. Als je dit eenmaal hebt gedaan, dan wordt je laatste zoekopdracht opgeslagen op je computer. Hierdoor kan je altijd je laatste zoekopdracht blijven bekijken, zelfs als je geen internetverbinding hebt.
