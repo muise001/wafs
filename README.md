@@ -49,6 +49,8 @@ Als bonus-pagina heb ik "DJ Khaled". Deze voegt eigenlijk vrij weinig toe aan de
    * Ik sorteer mijn gifjes op uploaddatum van nieuwste (bovenaan de pagina) naar oudste (onderaan de pagina).
  * Reduce
    * Met Reduce reken ik uit hoeveel dagen er zitten tussen de upload-datum van het oudste en nieuwste filmpje. 
+   
+[Handige bron die ik gebruikt heb bij het begrijpen van map, filter, sort, reduce](https://www.youtube.com/watch?v=rRgD1yVwIvE "Handige Bron")  
 
 ### Visual Flow
 
