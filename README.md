@@ -40,6 +40,16 @@ Eerst vulde ik mijn pagina in door een hele lange onleesbare string te posten vi
 **Audio**
 Als bonus-pagina heb ik "DJ Khaled". Deze voegt eigenlijk vrij weinig toe aan de website. Ik vond het grappig om deze toe te voegen tijdens de routes-opdracht. Deze heb ik later niet meer verwijdert omdat deze een audiofragment afspeelt. Zie deze pagina ook als grapje en neem het niet serieus
 
+**Filter Map Sort Reduce**
+ * Filter
+   * Ik check of de gifjes die binnenkomen een user-account hebben op giphy. Zo niet, dan filter ik ze eruit. Hierdoor heb je geen anonieme gif-uploaders.
+ * Map
+   * Met de Map functie zorg ik ervoor dat de titel van de gif wordt samengevoegd aan het twitteraccount van de gebruiker. Hierdoor krijg je bijvoorbeeld "drunk beer GIF by Bayerischer Rundfunk (@BR_Presse)". De titel die wordt samengevoegd zet ik neer bij de geschiedenis-pagina. Hierdoor kan je je beter herinneren wat je laatste zoekopdracht was.
+ * Sort
+   * Ik sorteer mijn gifjes op uploaddatum van nieuwste (bovenaan de pagina) naar oudste (onderaan de pagina).
+ * Reduce
+   * Met Reduce reken ik uit hoeveel dagen er zitten tussen de upload-datum van het oudste en nieuwste filmpje. 
+
 ### Visual Flow
 
 ![visual flow schets](https://github.com/muise001/wafs/blob/master/visualflow.jpg "visual flow schets")
