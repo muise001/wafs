@@ -56,6 +56,9 @@ Als bonus-pagina heb ik "DJ Khaled". Deze voegt eigenlijk vrij weinig toe aan de
 
 ![visual flow schets](https://github.com/muise001/wafs/blob/master/visualflow.jpg "visual flow schets")
 
+### Interaction Flow
+
+![Interaction flow schets](https://github.com/muise001/wafs/blob/master/71A7C653-C7DE-4C3C-96A0-CABB9A18DC62.jpg "interaction flow")
 
 # Week 2
 
