@@ -120,4 +120,23 @@ https://blog.hellojs.org/javascript-frameworks-why-and-when-to-use-them-43af33d0
 https://hsheikhm.wordpress.com/2016/02/07/js-frameworks-pros-cons/
 
 
+## Pro's and cons single page web app
+
+We kennen ze allemaal websites die er precies uitzien en werken als apps. De laatste jaren schieten ze als paddenstoelen uit de grond. Kijk naar de mobiele website van Facebook. Na een bepaalde update had je opeens een balkje aan de onderkant van je scherm. Hiermee kon je door de pagina heen navigeren. Dit pattern kende we natuurlijk al, maar niet in een website. Hoe kan het dat steeds meer websites de UI van een app overnemen? en wat zijn nou de voor- en nadelen?
+
+Een single page web-app is niets meer dan website waarop op de achtergrond al je content al voor je is geladen. Deze content kan je doormiddel van buttons of linkjes ontsluiten. Een groot nadeel aan dit soort websites is daardoor ook meteen dat het significant langer duurt om zo'n website te laden. Je kan hier natuurlijk service-workers voor gebruiken, maar niet alle sites doen dat.
+
+Ik heb een aantaal voor en nadelen op een rijtje gezet:
+
+
+||Voordelen van een webapp|Nadelen van een webapp||
+|:-| ---------- |----------| -:|
+||De gebruiker kan snel door de site navigeren, zonder dat er een nieuwe pagina wordt geladen|De laadtijd van de website is langer||
+||De webapp ziet er beter uit dan een normale website op je smartphone|Het is voor sommige gebruikers lastig omdat ze de webapp niet in een Appstore kunnen vinden||
+||Webapps kunnen zo gebouwd worden dat ze werken op alle devices|**De bouwtijd en het onderhoud van een webapp is veel hoger dan voor een normale mobiele website**||
+||Je kan ervoor kiezen om sommige dingen voor het ene device wel te supporten en voor andere niet|Je moet rekening houden met het aantal content omdat alles in een keer ingeladen wordt ||
+||Je kan het op een android smartphone voor zorgen dat het lijkt op een native android app terwijl een iphone weer andere styling heeft|||
+
+Het lijkt nu alsof er meer voordelen dan nadelen zijn aan het maken van een web-app. Maar er is een nadeel waardoor je heel goed moet overwegen of je wel of geen webapp gaat bouwen. Dit nadeel (dikgedrukt in het tabel) is niet alleen dat de bouwtijd en het onderhoud hoger is, omdat er elke dag nieuwe devices uitkomen en je app daar optimaal voor moet werken, maar ook budget. Als je kijkt naar wat het kost om een "normale responsive" website te bouwen tegenover een webapp, dan zit je zo op het tienvoudige. Voor een bedrijf als Google en Facebook is dat natuurlijk geen probleem. Maar voor kleine bedrijfjes soms de reden waarom ze het niet doen en misschien wel niet doorbreken. 
+
 >Emiel Muis
