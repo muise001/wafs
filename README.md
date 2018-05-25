@@ -139,4 +139,6 @@ Ik heb een aantaal voor en nadelen op een rijtje gezet:
 
 Het lijkt nu alsof er meer voordelen dan nadelen zijn aan het maken van een web-app. Maar er is een nadeel waardoor je heel goed moet overwegen of je wel of geen webapp gaat bouwen. Dit nadeel (dikgedrukt in het tabel) is niet alleen dat de bouwtijd en het onderhoud hoger is, omdat er elke dag nieuwe devices uitkomen en je app daar optimaal voor moet werken, maar ook budget. Als je kijkt naar wat het kost om een "normale responsive" website te bouwen tegenover een webapp, dan zit je zo op het tienvoudige. Voor een bedrijf als Google en Facebook is dat natuurlijk geen probleem. Maar voor kleine bedrijfjes soms de reden waarom ze het niet doen en misschien wel niet doorbreken. 
 
+	bron : https://www.lifewire.com/pros-and-cons-of-native-apps-and-mobile-web-apps-2373173
+
 >Emiel Muis
